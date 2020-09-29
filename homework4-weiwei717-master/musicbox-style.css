@@ -1,0 +1,65 @@
+/*
+TODO(you): Write any additional styles you need here.
+*/
+#music {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.gif{
+  display: flex;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.gif.backward {
+  z-index: 2;
+}
+
+#gif{
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+#gif.show .backward {
+  display: none;
+}
+
+#control {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+#play {
+  width: 60px;
+  height: 60px;
+  background-image: url('./images/play.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#play.pause {
+  background-image: url('./images/pause.png');
+}
+
+#loading {
+  height: 100vh;
+  color: #e2e2e2;
+  font-size: 2em;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
